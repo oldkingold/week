@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  week
+//
+//  Created by mac on 16/9/2.
+//  Copyright © 2016年 lw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//头文件
+#import "UIImageView+WebCache.h"
+#import "HomeCell.h"
+#import "HomeCellLayout.h"
+#import "HomeModel.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "HomeModel.h"
+//宏定义
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define CellImageViewHeight 200
+#define SpaceHeight 10
+#define LabelSpaceHeight 5
+#define OtherLabelHeight 21
+#define KAPI @"http://api.lanrenzhoumo.com"
+#define KIMAGE @"http://image.lanrenzhoumo.com"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Uuu-cE-Xu7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Denglv View Controller-->
+        <scene sceneID="d7Z-9k-fWk">
+            <objects>
+                <tableViewController storyboardIdentifier="DenglvViewControllerID" id="Uuu-cE-Xu7" customClass="DenglvViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Su7-rz-e7k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="r5p-HR-g94">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5nQ-St-WwY">
+                                        <rect key="frame" x="0.0" y="35" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5nQ-St-WwY" id="W8a-wQ-4oi">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UL0-dJ-096">
+                                                    <rect key="frame" x="10" y="5" width="580" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UL0-dJ-096" firstAttribute="top" secondItem="W8a-wQ-4oi" secondAttribute="topMargin" constant="-3" id="0Xt-9k-9vb" userLabel="请输入手机号.top = topMargin - 5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UL0-dJ-096" secondAttribute="bottom" constant="-3" id="33x-56-h13"/>
+                                                <constraint firstItem="UL0-dJ-096" firstAttribute="leading" secondItem="W8a-wQ-4oi" secondAttribute="leadingMargin" constant="2" id="CfN-M4-zfe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UL0-dJ-096" secondAttribute="trailing" constant="2" id="QiY-sA-S4Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xJ9-x8-noD">
+                                        <rect key="frame" x="0.0" y="79" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJ9-x8-noD" id="waH-Ab-mBr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcg-BK-8Hu">
+                                                    <rect key="frame" x="10" y="5" width="580" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pcg-BK-8Hu" secondAttribute="trailing" constant="2" id="4A9-fl-msW"/>
+                                                <constraint firstItem="pcg-BK-8Hu" firstAttribute="top" secondItem="waH-Ab-mBr" secondAttribute="topMargin" constant="-3" id="5wc-ua-4Dq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pcg-BK-8Hu" secondAttribute="bottom" constant="-3" id="9Xu-3K-fVi"/>
+                                                <constraint firstItem="pcg-BK-8Hu" firstAttribute="leading" secondItem="waH-Ab-mBr" secondAttribute="leadingMargin" constant="2" id="tDf-9A-pNv" userLabel="请输入密码.leading = leadingMargin + 2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="chT-RV-ZKF">
+                                        <rect key="frame" x="0.0" y="123" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chT-RV-ZKF" id="HsP-Y0-K6R">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnH-Vq-nAN">
+                                                    <rect key="frame" x="10" y="8" width="580" height="30"/>
+                                                    <color key="backgroundColor" red="0.025995842364574921" green="0.11037127009487642" blue="0.20847143308080807" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="登录">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="denglvAction:" destination="Uuu-cE-Xu7" eventType="touchUpInside" id="hKL-U5-r0U"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jnH-Vq-nAN" firstAttribute="leading" secondItem="HsP-Y0-K6R" secondAttribute="leadingMargin" constant="2" id="iPe-2D-waX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jnH-Vq-nAN" secondAttribute="bottom" constant="-3" id="s6n-5y-5Ld"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jnH-Vq-nAN" secondAttribute="trailing" constant="2" id="zQC-Ny-JtE"/>
+                                                <constraint firstItem="jnH-Vq-nAN" firstAttribute="top" secondItem="HsP-Y0-K6R" secondAttribute="topMargin" id="zWe-Og-Db4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zG5-ht-MUV">
+                                        <rect key="frame" x="0.0" y="167" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zG5-ht-MUV" id="l29-Bp-S18">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdR-LV-DqD">
+                                                    <rect key="frame" x="233" y="7" width="135" height="30"/>
+                                                    <state key="normal" title="没有账号？立即注册">
+                                                        <color key="titleColor" red="0.090196080505847931" green="0.22745099663734436" blue="0.33725491166114807" alpha="1" colorSpace="deviceRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="zhuceAction:" destination="Uuu-cE-Xu7" eventType="touchUpInside" id="CSk-2v-V8Z"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mdR-LV-DqD" firstAttribute="centerY" secondItem="l29-Bp-S18" secondAttribute="centerY" id="eFQ-I5-eup"/>
+                                                <constraint firstItem="mdR-LV-DqD" firstAttribute="centerX" secondItem="l29-Bp-S18" secondAttribute="centerX" id="k34-IN-jsA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Uuu-cE-Xu7" id="wrC-o9-bA6"/>
+                            <outlet property="delegate" destination="Uuu-cE-Xu7" id="d4E-yN-lbf"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="dengTableView" destination="Su7-rz-e7k" id="vAz-bA-S9i"/>
+                        <outlet property="number" destination="UL0-dJ-096" id="rWV-KL-b1P"/>
+                        <outlet property="password" destination="pcg-BK-8Hu" id="oMR-su-8dh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dun-fg-uni" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="218"/>
+        </scene>
+    </scenes>
+</document>
